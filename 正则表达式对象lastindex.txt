@@ -1,14 +1,26 @@
-ÕıÔò±í´ïÊ½¶ÔÏóµÄlastIndexÊôĞÔ:
-ÆäÊµÕâÕıÊÇÕıÔò±í´ïÊ½¶ÔÏóµÄlastIndexÊôĞÔÔÚ×÷¹Ö¡£lastIndex´Ó×ÖÃæÉÏÀ´½²¾ÍÊÇ×îºóÒ»¸öË÷Òı£¬
-Êµ¼ÊÉÏËüµÄÒâË¼ÊÇÕıÔò±í´ïÊ½¿ªÊ¼ÏÂÒ»´Î²éÕÒµÄË÷ÒıÎ»ÖÃ£¬µÚÒ»´ÎµÄÊ±ºò×ÜÊÇÎª0µÄ£¬µÚÒ»´Î²éÕÒ
-ÍêÁËµÄÊ±ºò»á°ÑlastIndexµÄÖµÉèÎªÆ¥Åäµ½µÃ×Ö·û´®µÄ×îºóÒ»¸ö×Ö·ûµÄË÷ÒıÎ»ÖÃ¼Ó1£¬µÚ¶ş´Î²éÕÒµÄ
-Ê±ºò»á´ÓlastIndexÕâ¸öÎ»ÖÃ¿ªÊ¼£¬ºóÃæµÄÒÔ´ËÀàÍÆ¡£Èç¹ûÃ»ÓĞÕÒµ½£¬Ôò»á°ÑlastIndexÖØÖÃÎª0¡£
-Òª×¢ÒâµÄÊÇ£¬lastIndexÊôĞÔÖ»ÓĞÔÚÓĞÈ«¾Ö±êÖ¾ÕıÔò±í´ïÊ½ÖĞ²ÅÓĞ×÷ÓÃ£¬Èç¹ûÎÒÃÇ°ÑÉÏÃæ´úÂëÖĞ
-ÕıÔò±í´ïÊ½µÄg±êÖ¾È¥µô£¬ÄÇÃ´Èı´Îµ¯³öµÄ¾Í¶¼ÊÇtrueÁË¡£
+/////////For more people to exchange study, above is Chinese, the following is english.
 
-×¢Òâ£º1.ÒòÎª´øÈ«¾Ö±êÖ¾µÄÕıÔò±í´ïÊ½Ã¿´ÎÆ¥Åäºó¶¼»á¸üĞÂlastIndexµÄÖµ×÷ÎªÏÂ´Î²éÕÒÆ¥ÅäµÄÆğµã¡£
-      2.×Ö·û´®ÀïµÄlastIndexµÄÖµÊÇ²»Æğ×÷ÓÃµÄ£¬²»¹ÜËüÊÇ²»ÊÇÈ«¾ÖÆ¥Åä¡£
+æ­£åˆ™è¡¨è¾¾å¼å¯¹è±¡çš„lastIndexå±æ€§:
+å…¶å®è¿™æ­£æ˜¯æ­£åˆ™è¡¨è¾¾å¼å¯¹è±¡çš„lastIndexå±æ€§åœ¨ä½œæ€ªã€‚lastIndexä»å­—é¢ä¸Šæ¥è®²å°±æ˜¯æœ€åä¸€ä¸ªç´¢å¼•ï¼Œ
+å®é™…ä¸Šå®ƒçš„æ„æ€æ˜¯æ­£åˆ™è¡¨è¾¾å¼å¼€å§‹ä¸‹ä¸€æ¬¡æŸ¥æ‰¾çš„ç´¢å¼•ä½ç½®ï¼Œç¬¬ä¸€æ¬¡çš„æ—¶å€™æ€»æ˜¯ä¸º0çš„ï¼Œç¬¬ä¸€æ¬¡æŸ¥æ‰¾
+å®Œäº†çš„æ—¶å€™ä¼šæŠŠlastIndexçš„å€¼è®¾ä¸ºåŒ¹é…åˆ°å¾—å­—ç¬¦ä¸²çš„æœ€åä¸€ä¸ªå­—ç¬¦çš„ç´¢å¼•ä½ç½®åŠ 1ï¼Œç¬¬äºŒæ¬¡æŸ¥æ‰¾çš„
+æ—¶å€™ä¼šä»lastIndexè¿™ä¸ªä½ç½®å¼€å§‹ï¼Œåé¢çš„ä»¥æ­¤ç±»æ¨ã€‚å¦‚æœæ²¡æœ‰æ‰¾åˆ°ï¼Œåˆ™ä¼šæŠŠlastIndexé‡ç½®ä¸º0ã€‚
+è¦æ³¨æ„çš„æ˜¯ï¼ŒlastIndexå±æ€§åªæœ‰åœ¨æœ‰å…¨å±€æ ‡å¿—æ­£åˆ™è¡¨è¾¾å¼ä¸­æ‰æœ‰ä½œç”¨ï¼Œå¦‚æœæˆ‘ä»¬æŠŠä¸Šé¢ä»£ç ä¸­
+æ­£åˆ™è¡¨è¾¾å¼çš„gæ ‡å¿—å»æ‰ï¼Œé‚£ä¹ˆä¸‰æ¬¡å¼¹å‡ºçš„å°±éƒ½æ˜¯trueäº†ã€‚
+
+æ³¨æ„ï¼š1.å› ä¸ºå¸¦å…¨å±€æ ‡å¿—çš„æ­£åˆ™è¡¨è¾¾å¼æ¯æ¬¡åŒ¹é…åéƒ½ä¼šæ›´æ–°lastIndexçš„å€¼ä½œä¸ºä¸‹æ¬¡æŸ¥æ‰¾åŒ¹é…çš„èµ·ç‚¹ã€‚
+      2.å­—ç¬¦ä¸²é‡Œçš„lastIndexçš„å€¼æ˜¯ä¸èµ·ä½œç”¨çš„ï¼Œä¸ç®¡å®ƒæ˜¯ä¸æ˜¯å…¨å±€åŒ¹é…ã€‚
+      3.è¦æŠŠlastIndex=0; éœ€è¦æ‰‹åŠ¨è®¾ç½®ä¸‹.
 
 
- 
-Òª°ÑlastIndex=0; ĞèÒªÊÖ¶¯ÉèÖÃÏÂ.
+LastIndex properties of regular expression objects:
+In fact, this is the regular expression object attribute in the lastIndex time. LastIndex is literally the last index,
+In fact, it means that the regular expression to start the next search index, the first time is always 0, the first search
+When the lastIndex value is set to match the value of the last character of the string to add 1, second times the value of the
+It will start from the lastIndex to the position, and so on. If not found, the lastIndex will be reset to 0.
+It should be noted that the lastIndex attribute only has a role in a regular expression with a global flag, if we put the
+Regular expression of the G Logo removed, then the three pop up is true.
+
+Note: 1.because the regular expression with a global flag will be updated each time the value of the lastIndex as the starting point for the next match.
+      2.The value of the lastIndex in the string does not work, whether it is global or not.
+      3. To put lastIndex=0; need to manually set the next.
