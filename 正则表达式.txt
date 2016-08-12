@@ -1,39 +1,65 @@
-ÕıÔò±í´ïÊ½µÄ·½·¨£º
-test():  ÕıÔò±í´ïÊ½µÄ·½·¨£¬·µ»ØÖµÊÇture/false
-exec():  ÕıÔò±í´ïÊ½µÄ·½·¨£¬·µ»ØÖµÊÇÒ»¸öÆ¥ÅäµÄÊı×é£¬°ÑÆ¥Åä³öÀ´µÄ½á¹û·Åµ½Ò»¸öÊı×éÀï£¬
-         Ö±µ½Æ¥Åä²»³É¹¦£¬Èç¹ûÆ¥Åä²»³É¹¦»á·µ»Ønull£¬Æ¥Åä½áÊø£¬·µ»ØÖµÊÇÒ»¸öÊı×é¡£
+///////////In order to have more people to learn, the above is Chinese, the following are English
 
-×Ö·û´®µÄ·½·¨£º
-match(): ×Ö·û´®µÄ·½·¨£¬·µ»ØÖµÊÇÒ»¸öÊı×é£¬Æ¥Åä·ûºÏÌõ¼şµÄÎÄ±¾·ÅÔÚÊı×éÀï£¬Èç¹ûÆ¥Åä²»µ½     
-         ·µ»ØÖµÊÇnull¡£
-         Õâ¸ö·½·¨ÊÇ²»ÊÇÈ«¾Ö²éÕÒÓĞºÜ´óÇø±ğ£º
-         1£ºÈç¹û²»ÊÇÈ«¾Ö²éÕÒ£¬Ö»Ö´ĞĞÒ»´ÎÆ¥Åä£¬È»ºó½áÊø£»
-           Õâ¸ö·½·¨·µ»ØÖµ³ıÁË³£¹æµÄÊı×éÔªËØÖ®Íâ£¬·µ»ØµÄÊı×é»¹º¬ÓĞÁ½¸ö¶ÔÏóÊôĞÔ¡£
-           index ÊôĞÔÉùÃ÷µÄÊÇÆ¥ÅäÎÄ±¾µÄÆğÊ¼×Ö·ûÔÚ stringObject ÖĞµÄÎ»ÖÃ£¬
-           input ÊôĞÔÉùÃ÷µÄÊÇ¶Ô stringObject µÄÒıÓÃ¡£
-         2£ºÈç¹ûÊÇÈ«¾Ö²éÕÒ£¬ÔòÆ¥Åä×Ö·û´®ÖĞËùÓĞ·ûºÏµÄ×Ö·û£¬Èç¹ûÆ¥Åäµ½ÁË·ûºÏÌõ¼şµÄ½á¹û£¬
-            ·µ»Ø½á¹ûÊÇÒ»¸öÊı×é£»Èç¹ûÃ»ÓĞÆ¥Åäµ½·ûºÏÌõ¼şµÄ½á¹û£¬·µ»ØÖµÊÇnull¡£
-         ×¢Òâ£ºÕâÀïÈ«¾Ö²éÕÒÏÂ·µ»ØµÄÊı×éÓë·ÇÈ«¾Ö²éÕÒÏÂ·µ»ØµÄÊı×éÓĞÇø±ğ£º
-             ËüµÄÊı×éÔªËØÖĞ´æ·ÅµÄÊÇ strObj ÖĞËùÓĞµÄÆ¥Åä×Ó´®£¬
-             ¶øÇÒÒ²Ã»ÓĞ index ÊôĞÔ»ò input ÊôĞÔ¡£
+æ­£åˆ™è¡¨è¾¾å¼çš„æ–¹æ³•ï¼š
+test():  æ­£åˆ™è¡¨è¾¾å¼çš„æ–¹æ³•ï¼Œè¿”å›å€¼æ˜¯ture/false
+exec():  æ­£åˆ™è¡¨è¾¾å¼çš„æ–¹æ³•ï¼Œè¿”å›å€¼æ˜¯ä¸€ä¸ªåŒ¹é…çš„æ•°ç»„ï¼ŒæŠŠåŒ¹é…å‡ºæ¥çš„ç»“æœæ”¾åˆ°ä¸€ä¸ªæ•°ç»„é‡Œï¼Œ
+         ç›´åˆ°åŒ¹é…ä¸æˆåŠŸï¼Œå¦‚æœåŒ¹é…ä¸æˆåŠŸä¼šè¿”å›nullï¼ŒåŒ¹é…ç»“æŸï¼Œè¿”å›å€¼æ˜¯ä¸€ä¸ªæ•°ç»„ã€‚
 
-replace£¨£©:×Ö·û´®µÄ·½·¨
-          ÓĞÁ½ÖÖ£ºµÚÒ»ÖÖ£ºstrObj.replace(regObj,replaceStr)
-                  µÚ¶şÖÖ£ºstrObj.replace(regObj,function(){})
-                          °Ñreplace·½·¨µÄµÚ¶ş¸ö²ÎÊı´«ÈëÒ»¸öfunction£¬Õâ¸öfunction»áÔÚ
-                          Ã¿´ÎÆ¥ÅäÌæ»»µÄÊ±ºòµ÷ÓÃ£¬ËãÊÇ¸öÃ¿´ÎÌæ»»µÄ»Øµ÷º¯Êı£¬ÎÒÃÇÊ¹ÓÃÁË
-                          »Øµ÷º¯ÊıµÄµÚÒ»¸ö²ÎÊı£¬Ò²¾ÍÊÇÆ¥ÅäÄÚÈİ£¬ÆäÊµ»Øµ÷º¯ÊıÒ»¹²ÓĞËÄ¸ö²ÎÊı
-                            1.µÚÒ»¸ö²ÎÊıºÜ¼òµ¥£¬ÊÇÆ¥Åä×Ö·û´®
-                            2.µÚ¶ş¸ö²ÎÊıÊÇÕıÔò±í´ïÊ½·Ö×éÄÚÈİ£¬Ã»ÓĞ·Ö×éÔòÃ»ÓĞ¸Ã²ÎÊı
-                            3.µÚÈı¸ö²ÎÊıÊÇÆ¥ÅäÏîÔÚ×Ö·û´®ÖĞµÄindex
-                            4.µÚËÄ¸ö²ÎÊıÔòÊÇÔ­×Ö·û´®
+å­—ç¬¦ä¸²çš„æ–¹æ³•ï¼š
+match(): å­—ç¬¦ä¸²çš„æ–¹æ³•ï¼Œè¿”å›å€¼æ˜¯ä¸€ä¸ªæ•°ç»„ï¼ŒåŒ¹é…ç¬¦åˆæ¡ä»¶çš„æ–‡æœ¬æ”¾åœ¨æ•°ç»„é‡Œï¼Œå¦‚æœåŒ¹é…ä¸åˆ°     
+         è¿”å›å€¼æ˜¯nullã€‚
+         è¿™ä¸ªæ–¹æ³•æ˜¯ä¸æ˜¯å…¨å±€æŸ¥æ‰¾æœ‰å¾ˆå¤§åŒºåˆ«ï¼š
+         1ï¼šå¦‚æœä¸æ˜¯å…¨å±€æŸ¥æ‰¾ï¼Œåªæ‰§è¡Œä¸€æ¬¡åŒ¹é…ï¼Œç„¶åç»“æŸï¼›
+           è¿™ä¸ªæ–¹æ³•è¿”å›å€¼é™¤äº†å¸¸è§„çš„æ•°ç»„å…ƒç´ ä¹‹å¤–ï¼Œè¿”å›çš„æ•°ç»„è¿˜å«æœ‰ä¸¤ä¸ªå¯¹è±¡å±æ€§ã€‚
+           index å±æ€§å£°æ˜çš„æ˜¯åŒ¹é…æ–‡æœ¬çš„èµ·å§‹å­—ç¬¦åœ¨ stringObject ä¸­çš„ä½ç½®ï¼Œ
+           input å±æ€§å£°æ˜çš„æ˜¯å¯¹ stringObject çš„å¼•ç”¨ã€‚
+         2ï¼šå¦‚æœæ˜¯å…¨å±€æŸ¥æ‰¾ï¼Œåˆ™åŒ¹é…å­—ç¬¦ä¸²ä¸­æ‰€æœ‰ç¬¦åˆçš„å­—ç¬¦ï¼Œå¦‚æœåŒ¹é…åˆ°äº†ç¬¦åˆæ¡ä»¶çš„ç»“æœï¼Œ
+            è¿”å›ç»“æœæ˜¯ä¸€ä¸ªæ•°ç»„ï¼›å¦‚æœæ²¡æœ‰åŒ¹é…åˆ°ç¬¦åˆæ¡ä»¶çš„ç»“æœï¼Œè¿”å›å€¼æ˜¯nullã€‚
+         æ³¨æ„ï¼šè¿™é‡Œå…¨å±€æŸ¥æ‰¾ä¸‹è¿”å›çš„æ•°ç»„ä¸éå…¨å±€æŸ¥æ‰¾ä¸‹è¿”å›çš„æ•°ç»„æœ‰åŒºåˆ«ï¼š
+             å®ƒçš„æ•°ç»„å…ƒç´ ä¸­å­˜æ”¾çš„æ˜¯ strObj ä¸­æ‰€æœ‰çš„åŒ¹é…å­ä¸²ï¼Œ
+             è€Œä¸”ä¹Ÿæ²¡æœ‰ index å±æ€§æˆ– input å±æ€§ã€‚
 
-split():×Ö·û´®µÄ·½·¨ -- strObj.split(regObj)   °Ñ×Ö·û´®·Ö¸îÎª×Ö·ûÊı×é¡£
+replaceï¼ˆï¼‰:å­—ç¬¦ä¸²çš„æ–¹æ³•
+          æœ‰ä¸¤ç§ï¼šç¬¬ä¸€ç§ï¼šstrObj.replace(regObj,replaceStr)
+                  ç¬¬äºŒç§ï¼šstrObj.replace(regObj,function(){})
+                          æŠŠreplaceæ–¹æ³•çš„ç¬¬äºŒä¸ªå‚æ•°ä¼ å…¥ä¸€ä¸ªfunctionï¼Œè¿™ä¸ªfunctionä¼šåœ¨
+                          æ¯æ¬¡åŒ¹é…æ›¿æ¢çš„æ—¶å€™è°ƒç”¨ï¼Œç®—æ˜¯ä¸ªæ¯æ¬¡æ›¿æ¢çš„å›è°ƒå‡½æ•°ï¼Œæˆ‘ä»¬ä½¿ç”¨äº†
+                          å›è°ƒå‡½æ•°çš„ç¬¬ä¸€ä¸ªå‚æ•°ï¼Œä¹Ÿå°±æ˜¯åŒ¹é…å†…å®¹ï¼Œå…¶å®å›è°ƒå‡½æ•°ä¸€å…±æœ‰å››ä¸ªå‚æ•°
+                            1.ç¬¬ä¸€ä¸ªå‚æ•°å¾ˆç®€å•ï¼Œæ˜¯åŒ¹é…å­—ç¬¦ä¸²
+                            2.ç¬¬äºŒä¸ªå‚æ•°æ˜¯æ­£åˆ™è¡¨è¾¾å¼åˆ†ç»„å†…å®¹ï¼Œæ²¡æœ‰åˆ†ç»„åˆ™æ²¡æœ‰è¯¥å‚æ•°
+                            3.ç¬¬ä¸‰ä¸ªå‚æ•°æ˜¯åŒ¹é…é¡¹åœ¨å­—ç¬¦ä¸²ä¸­çš„index
+                            4.ç¬¬å››ä¸ªå‚æ•°åˆ™æ˜¯åŸå­—ç¬¦ä¸²
 
-
-
-
+split():å­—ç¬¦ä¸²çš„æ–¹æ³• -- strObj.split(regObj)   æŠŠå­—ç¬¦ä¸²åˆ†å‰²ä¸ºå­—ç¬¦æ•°ç»„ã€‚
 
 
-
+translationï¼š
+Method of regular expression:
+Test (): a regular expression of the method, the return value is ture/false
+Exec (): a regular expression of the method, the return value is a match of the array, the results of the match out into an array,
+Until the match is not successful, if the match does not return null, the match ends, the return value is an array.
+Method of string:
+Match (): the string method, the return value is an array, matching the condition of the text in the array, if the match is not
+Return value is null.
+This method is not a global search has a great difference:
+1: if it is not a global search, only the implementation of a match, and then end;
+The return value of this method, in addition to the conventional array elements, the returned array contains two object properties.
+The index attribute declares the location of the starting character in the stringObject,
+The input attribute declares a reference to the stringObject.
+2: if it is a global search, then match the character of all the characters in the string, if matching to meet the conditions of the results,
+The return result is an array; if there is no match to the result of the condition, the return value is null.
+Note: there is a difference between the array returned by global search and the array returned by non global search:
+The array elements are stored in the strObj in all of the matching string,
+And there are no index or input attributes.
+Replace (): a string method
+There are two kinds: the first one: strObj.replace (regObj, replaceStr)
+Second: strObj.replace (regObj (function) {})
+The replace method of the second parameters into a function, the function will be in the
+Each time the match is replaced by a call, which is a callback function for each replacement, we use the
+Callback function of the first argument, that is, the matching content, in fact, a total of four callback function parameters
+1 the first parameter is very simple, is the matching string
+Second 2 parameters are the regular expression of the content, no group is not the parameter
+Third 3 arguments are the index in the string.
+Fourth 4 parameters are the original string
+Split (): the method of string - strObj.split (regObj) to the string into a character array.
 
